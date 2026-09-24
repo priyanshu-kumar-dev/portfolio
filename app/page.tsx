@@ -21,7 +21,7 @@ const skillCategories = [
   {
     title: "Languages",
     description: "Programming fundamentals",
-    skills: ["JavaScript", "TypeScript", "HTML", "CSS"],
+    skills: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
   },
   {
     title: "Frontend",
@@ -41,7 +41,7 @@ const skillCategories = [
   {
     title: "Tools",
     description: "Development workflow",
-    skills: ["Git", "GitHub", "npm", "Postman", "VS Code"],
+    skills: ["Git", "GitHub", "npm", "VS Code"],
   },
   {
     title: "Integration",
