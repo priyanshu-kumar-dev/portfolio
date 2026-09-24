@@ -36,27 +36,46 @@ const skillCategories = [
   {
     title: "Databases",
     description: "Data storage & management",
-    skills: ["MongoDB", "PostgreSQL", "Mongoose"],
+    skills: ["MongoDB", "MongoDB Atlas", "PostgreSQL", "Mongoose"],
   },
   {
     title: "Tools",
     description: "Development workflow",
-    skills: ["Git", "GitHub", "VS Code"],
+    skills: ["Git", "GitHub", "npm", "Postman", "VS Code"],
+  },
+  {
+    title: "Integration",
+    description: "API and third-party service integration",
+    skills: ["REST API", "Postman", "Razorpay", "2Factor", "Cloudinary"],
+  },
+  {
+    title: "Deployment",
+    description: "Application deployment and hosting",
+    skills: ["Render", "Vercel", "Git", "GitHub"],
   },
   {
     title: "Problem Solving",
     description: "Interview preparation",
     skills: ["DSA", "LeetCode", "Problem Solving"],
   },
+  {
+    title: "AI Tools",
+    description: "AI-assisted development and productivity",
+    skills: ["ChatGPT", "Claude", "GitHub Copilot"],
+  },
 ];
 
 const projectTech = [
+  "JavaScript",
   "React.js",
+  "Tailwind CSS",
   "Node.js",
   "Express.js",
   "MongoDB",
+  "MongoDB Atlas",
   "JWT",
   "REST API",
+  "2Factor",
   "Razorpay",
   "Cloudinary",
 ];
@@ -190,8 +209,17 @@ export default function Home() {
           transition={{ duration: 0.7 }}
           className="relative mx-auto max-w-4xl text-center"
         >
-          <div className="mb-5 inline-flex items-center rounded-full border border-blue-500/20 bg-blue-500/5 px-4 py-2 text-xs font-medium uppercase tracking-[0.2em] text-blue-400 sm:text-sm">
-            Junior Software Engineer
+          <div className="group relative mb-6 inline-flex items-center overflow-hidden rounded-full border border-blue-400/40 bg-blue-500/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-blue-300 shadow-[0_0_25px_rgba(59,130,246,0.15)] transition-all duration-300 hover:scale-105 hover:border-blue-400/70 hover:bg-blue-500/15 hover:shadow-[0_0_35px_rgba(59,130,246,0.3)] sm:px-7 sm:py-3.5 sm:text-base">
+            {/* Animated shine */}
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+
+            {/* Pulsing dot */}
+            <span className="relative mr-3 flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-60" />
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-blue-400 shadow-[0_0_10px_rgba(96,165,250,0.8)]" />
+            </span>
+
+            <span className="relative">Full Stack Developer</span>
           </div>
 
           <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
@@ -199,9 +227,9 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-gray-400 sm:text-lg md:text-xl md:leading-8">
-            I build modern full-stack web applications and solve programming
-            problems using JavaScript, React.js, Node.js and modern software
-            engineering practices.
+            I build modern full-stack web applications across the frontend,
+            backend, databases, APIs, integrations and deployment using the MERN
+            stack and modern web technologies.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -232,7 +260,7 @@ export default function Home() {
             </a>
 
             <a
-              href="YOUR_LINKEDIN_URL"
+              href="https://www.linkedin.com/in/priyanshukumar-sahu/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-white"
@@ -241,7 +269,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://leetcode.com/priyanshu420/"
+              href="https://leetcode.com/u/priyanshu420/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-white"
@@ -270,29 +298,31 @@ export default function Home() {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
-                Building practical software with a strong engineering mindset
+                Building complete products across the full stack
               </h2>
 
               <p className="mt-6 text-base leading-7 text-gray-400 sm:text-lg sm:leading-8">
-                I am a Computer Science student passionate about software
-                engineering, full-stack development and problem solving. I enjoy
-                turning ideas into functional web applications and continuously
-                improving my development skills.
+                I am a Computer Science student and Full Stack Developer focused
+                on building complete, real-world web applications. I enjoy
+                turning ideas into functional products and working across
+                frontend development, backend APIs, databases, authentication
+                and deployment.
               </p>
 
               <p className="mt-5 leading-7 text-gray-400 sm:leading-8">
                 My current focus is strengthening Data Structures & Algorithms,
-                building production-oriented applications and developing a
-                strong foundation in software engineering. I am particularly
-                interested in JavaScript, TypeScript, React.js, Next.js, Node.js
-                and databases.
+                building production-oriented applications and improving my
+                full-stack engineering skills. I work mainly with JavaScript,
+                React.js, Tailwind CSS, Node.js, Express.js, MongoDB, MongoDB
+                Atlas and REST APIs, while continuing to learn TypeScript and
+                System Design.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-1">
               {[
-                ["Focus", "Software Engineering"],
-                ["Development", "Full-Stack Web Development"],
+                ["Role", "Full Stack Developer"],
+                ["Development", "Frontend + Backend + Database"],
                 ["Problem Solving", "Data Structures & Algorithms"],
                 ["Current Project", "ApnaBazar"],
               ].map(([label, value]) => (
@@ -331,8 +361,8 @@ export default function Home() {
             </h2>
 
             <p className="mt-4 max-w-2xl leading-7 text-gray-400">
-              Technologies I use to build full-stack applications and improve my
-              software engineering skills.
+              Technologies I use to design, build, integrate and deploy
+              full-stack web applications.
             </p>
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -359,6 +389,51 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ================= FULL STACK WORKFLOW ================= */}
+      <section className="border-y border-white/10 bg-[#0a0a0a]">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center"
+          >
+            <p className="text-sm font-medium uppercase tracking-[0.25em] text-blue-400">
+              Full Stack Workflow
+            </p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+              From UI to Production
+            </h2>
+
+            <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+              {[
+                ["01", "Frontend", "React.js • Tailwind CSS"],
+                ["02", "Backend", "Node.js • Express.js"],
+                ["03", "APIs", "REST • JWT • OTP"],
+                ["04", "Database", "MongoDB • Atlas"],
+                ["05", "Integrations", "Razorpay • Cloudinary"],
+                ["06", "Deployment", "Render • Vercel"],
+              ].map(([number, title, description]) => (
+                <motion.div
+                  key={number}
+                  whileHover={{ y: -5 }}
+                  className="rounded-2xl border border-white/10 bg-white/[0.025] p-5 text-left transition hover:border-blue-500/30"
+                >
+                  <span className="text-xs font-semibold text-blue-400">
+                    {number}
+                  </span>
+                  <h3 className="mt-3 font-semibold text-white">{title}</h3>
+                  <p className="mt-2 text-xs leading-5 text-gray-500">
+                    {description}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -522,8 +597,8 @@ export default function Home() {
 
               <p className="mt-5 max-w-2xl leading-8 text-gray-400">
                 I regularly practice Data Structures and Algorithms using
-                JavaScript to improve my problem-solving skills and prepare for
-                software engineering interviews.
+                JavaScript to strengthen my problem-solving skills and prepare
+                for software engineering interviews.
               </p>
 
               <p className="mt-4 max-w-2xl leading-8 text-gray-400">
@@ -534,7 +609,7 @@ export default function Home() {
 
               <div className="mt-8">
                 <a
-                  href="https://leetcode.com/priyanshu420/"
+                  href="https://leetcode.com/u/priyanshu420/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex rounded-lg bg-orange-500 px-5 py-3 font-medium transition hover:bg-orange-400"
@@ -589,8 +664,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 leading-8 text-gray-400">
-              I&apos;m currently looking for internship and junior software
-              engineering opportunities. Feel free to connect with me.
+              I&apos;m currently looking for Full Stack Developer, MERN Stack
+              and software development internship opportunities. Feel free to
+              connect with me.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -650,7 +726,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://leetcode.com/priyanshu420/"
+              href="https://leetcode.com/u/priyanshu420/"
               target="_blank"
               rel="noopener noreferrer"
               className="transition hover:text-white"
